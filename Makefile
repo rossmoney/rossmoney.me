@@ -5,6 +5,9 @@ export $(shell sed 's/=.*//' .env)
 composer-install:
 	cd webroot && docker-compose -f docker-compose-makefile.yml run main composer install
 
+composer-dump-autoload:
+	cd webroot && docker-compose -f docker-compose-makefile.yml run main composer dump-autoload
+
 frankenphp-install:
 	./frankenphp-install.sh
 
