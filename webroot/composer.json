@@ -8,6 +8,7 @@
         "php": "^8.0.2",
         "october/rain": "^3.6",
         "laravel/framework": "^9.0",
+        "laravel/sail": "^1.28",
         "october/all": "^3.6"
     },
     "require-dev": {
