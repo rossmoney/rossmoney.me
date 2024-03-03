@@ -8,6 +8,12 @@ composer-install:
 composer-dump-autoload:
 	cd webroot && docker-compose -f docker-compose-makefile.yml run main composer dump-autoload
 
+composer-require:
+	cd webroot && docker-compose -f docker-compose-makefile.yml run main composer require ${PACKAGE}
+
+bash:
+	docker exec -it rossmoney_me_frankenphp bash
+
 frankenphp-install:
 	./frankenphp-install.sh
 
