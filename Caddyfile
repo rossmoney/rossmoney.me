@@ -30,7 +30,7 @@
 		}
 	}
 
-	root * /home/container/webroot/public/
+	root * /home/container/webroot/
 	encode zstd br gzip
 
 	# Uncomment the following lines to enable Mercure and Vulcain modules
